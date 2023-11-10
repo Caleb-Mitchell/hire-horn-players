@@ -1,25 +1,38 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header.astro";
-import CircleImage from "../components/CircleImage.astro";
 import Banner from "../components/Banner.astro";
+import CircleImage from "../components/CircleImage.astro";
+import DataSecurityArcticle from "../components/DataSecurityArticle.astro";
+import DescriptionArticle from "../components/DescriptionArticle.astro";
+import FluidBanner from "../components/FluidBanner.astro";
+import Footer from "../components/Footer.astro";
+import InquireForm from "../components/InquireForm.astro";
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+import RectangleButton from "../components/RectangleButton.astro";
 ---
 
 <Layout title="HireHornPlayers.com">
   <Header />
   <main>
-    <Banner />
-
+    <Banner text="HIRE" text2="HORN" text3="PLAYERS" />
     <CircleImage
       src="/brass_instruments.jpeg"
-      alt="Some horns, a trumpet, trombone, and tenor Saxophone"
+      alt="Some horns: a trumpet, trombone, and tenor saxophone"
+      label="A BRASSROOTS MOVEMENT"
     />
-
-    <h8 class="mx-auto w-1/4 font-acumin">A BRASSROOTS MOVEMENT</h8>
-
-    <!-- <CircleImage -->
-    <!--   src="/horn_section.jpeg" -->
-    <!--   alt="A horn section playing in the studio" -->
-    <!-- /> -->
+    <RectangleButton text="BOOK NOW" href="localhost:4321/#inquire" />
+    <FluidBanner text="BORN 2 HORN" />
+    <DescriptionArticle />
+    <CircleImage
+      src="/horn_section_2.jpeg"
+      alt="A horn section playing on stage"
+    />
+    <InquireForm text="INQUIRE BELOW" />
+    <CircleImage
+      src="/horn_section.jpeg"
+      alt="A horn section playing in the studio"
+    />
+    <DataSecurityArcticle />
+    <Footer />
   </main>
 </Layout>
