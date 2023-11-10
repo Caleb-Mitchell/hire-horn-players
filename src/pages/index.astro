@@ -1,20 +1,25 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
+import CircleImage from "../components/CircleImage.astro";
+import Banner from "../components/Banner.astro";
 ---
 
 <Layout title="HireHornPlayers.com">
   <Header />
   <main>
-    <div class="font-anton text-6xl w-max flex flex-col -space-y-1.5 ml-4">
-      <h1>HIRE</h1>
-      <h1>HORN</h1>
-      <h1>PLAYERS</h1>
-    </div>
-    <img
-      class="bg-black rounded-[50%] mx-auto w-4/5 mt-3"
-      src="../../public/brass_instruments.jpeg"
-      alt="Trumpet, Trombone, Tenor Saxophone"
+    <Banner />
+
+    <CircleImage
+      src="/brass_instruments.jpeg"
+      alt="Some horns, a trumpet, trombone, and tenor Saxophone"
     />
+
+    <h8 class="mx-auto w-1/4 font-acumin">A BRASSROOTS MOVEMENT</h8>
+
+    <!-- <CircleImage -->
+    <!--   src="/horn_section.jpeg" -->
+    <!--   alt="A horn section playing in the studio" -->
+    <!-- /> -->
   </main>
 </Layout>
