@@ -1,5 +1,15 @@
-<div class="ml-4 flex w-max flex-col -space-y-1.5 font-anton text-6xl">
-  <h1>HIRE</h1>
-  <h1>HORN</h1>
-  <h1>PLAYERS</h1>
+---
+interface Props {
+  text: string;
+  text2?: string;
+  text3?: string;
+}
+
+const { text, text2, text3 } = Astro.props;
+---
+
+<div class="ml-4 mt-12 flex w-max flex-col -space-y-1.5 font-anton text-6xl">
+  <h1>{text}</h1>
+  <h1>{text2}</h1>
+  <h1>{text3}</h1>
 </div>

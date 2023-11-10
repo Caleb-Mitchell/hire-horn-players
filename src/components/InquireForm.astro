@@ -1,0 +1,13 @@
+---
+interface Props {
+  text: string;
+}
+
+const { text } = Astro.props;
+---
+
+<form id="inquire">
+  <h2 class="mx-auto mt-8 w-11/12 font-anton text-3xl italic">
+    {text}
+  </h2>
+</form>

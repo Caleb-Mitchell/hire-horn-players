@@ -1,0 +1,15 @@
+---
+interface Props {
+  text: string;
+  href: string;
+}
+
+const { text, href } = Astro.props;
+---
+
+<form class="mx-auto mt-3 w-4/5 text-center" action={href} method="get">
+  <button
+    class="w-4/5 border-2 pt-1 font-acumin text-[14px] text-white"
+    type="submit">{text}</button
+  >
+</form>
