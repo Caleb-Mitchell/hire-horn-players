@@ -1,5 +1,6 @@
 ---
 import Banner from "../components/Banner.astro";
+import BannerImage from "../components/BannerImage.astro";
 import CircleImage from "../components/CircleImage.astro";
 import DataSecurityArcticle from "../components/DataSecurityArticle.astro";
 import DescriptionArticle from "../components/DescriptionArticle.astro";
@@ -8,6 +9,7 @@ import Footer from "../components/Footer.astro";
 import InquireForm from "../components/InquireForm.astro";
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
+import Marquee from "../components/Marquee.astro";
 import RectangleButton from "../components/RectangleButton.astro";
 ---
 
@@ -16,7 +18,7 @@ import RectangleButton from "../components/RectangleButton.astro";
   <main>
     <div class="md:justify-center md:flex md:mx-auto md:w-2/3 md:mt-20 lg:mt-36">
       <Banner text="HIRE" text2="HORN" text3="PLAYERS" />
-      <CircleImage
+      <BannerImage
         src="/brass_instruments.jpeg"
         alt="Some horns: a trumpet, trombone, and tenor saxophone"
       />
@@ -24,54 +26,35 @@ import RectangleButton from "../components/RectangleButton.astro";
     <h8 class="mx-auto mt-3 md:mt-10 block w-2/3 text-center font-acumin text-[14px]"
     >A BRASSROOTS MOVEMENT</h8
     >
-    <RectangleButton text="BOOK NOW" href="localhost:4321/#inquire" />
+    <RectangleButton text="BOOK NOW" href="https://hire-horn-players.vercel.app/#inquire" />
+    <Marquee />
+    <FluidBanner text="BORN 2 HORN" />
 
-    <div class="overflow-x-hidden relative border-[#ff6123] border-y mt-12 md:mb-12 h-16 flex items-center font-acumin text-xs">
-      <div class="animate-marquee whitespace-nowrap"
-        <i class="mx-2 nf nf-md-star_four_points"></i>
-        <span class="mx-2">NOT JUST TOOTING OUR HORNS</span>
-        <i class="mx-2 nf nf-md-star_four_points"></i>
-        <span class="mx-2">BLOWING HORNS AND MINDS SINCE 2023</span>
-        <i class="mx-2 nf nf-md-star_four_points"></i>
-        <span class="mx-2">BRASS ACTS ONLY</span>
-        <i class="mx-2 nf nf-md-star_four_points"></i>
-        <span class="mx-2">NOT JUST TOOTING OUR HORNS</span>
-        <i class="mx-2 nf nf-md-star_four_points"></i>
-        <span class="mx-2">BLOWING HORNS AND MINDS SINCE 2023</span>
-        <i class="mx-2 nf nf-md-star_four_points"></i>
-        <span class="mx-2">BRASS ACTS ONLY</span>
-        <i class="mx-2 nf nf-md-star_four_points"></i>
+    <div class="md:flex items-center">
+      <div class="mx-4 md:w-1/2 md:order-last md:mr-6">
+        <DescriptionArticle />
       </div>
-
-      <div class="absolute animate-marquee2 whitespace-nowrap"
-        <i class="mx-2 nf nf-md-star_four_points"></i>
-        <span class="mx-2">NOT JUST TOOTING OUR HORNS</span>
-        <i class="mx-2 nf nf-md-star_four_points"></i>
-        <span class="mx-2">BLOWING HORNS AND MINDS SINCE 2023</span>
-        <i class="mx-2 nf nf-md-star_four_points"></i>
-        <span class="mx-2">BRASS ACTS ONLY</span>
-        <i class="mx-2 nf nf-md-star_four_points"></i>
-        <span class="mx-2">NOT JUST TOOTING OUR HORNS</span>
-        <i class="mx-2 nf nf-md-star_four_points"></i>
-        <span class="mx-2">BLOWING HORNS AND MINDS SINCE 2023</span>
-        <i class="mx-2 nf nf-md-star_four_points"></i>
-        <span class="mx-2">BRASS ACTS ONLY</span>
-        <i class="mx-2 nf nf-md-star_four_points"></i>
+      <div class="md:w-1/2 md:ml-4 lg:ml-10">
+        <CircleImage
+          src="/horn_section_2.jpeg"
+          alt="A horn section playing on stage"
+        />
       </div>
     </div>
 
-    <FluidBanner text="BORN 2 HORN" />
-    <DescriptionArticle />
-    <CircleImage
-      src="/horn_section_2.jpeg"
-      alt="A horn section playing on stage"
-    />
-    <InquireForm text="INQUIRE BELOW" />
-    <CircleImage
-      src="/horn_section.jpeg"
-      alt="A horn section playing in the studio"
-    />
-    <DataSecurityArcticle />
+    <div class="md:flex">
+      <div class="md:w-1/2">
+        <InquireForm text="INQUIRE BELOW" />
+      </div>
+      <div class="md:w-1/2 md:self-end">
+        <CircleImage
+          src="/horn_section.jpeg"
+          alt="A horn section playing in the studio"
+        />
+        <DataSecurityArcticle />
+      </div>
+    </div>
+
     <Footer />
   </main>
 </Layout>

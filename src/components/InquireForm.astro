@@ -8,17 +8,17 @@ text: string;
 const { text } = Astro.props;
 ---
 
-<h2 class="pl-4 mt-8 font-anton text-3xl italic">
-  {text}
-</h2>
 
 <form class="px-4 mt-2 text-white flex flex-col gap-3 font-acumin text-xs" id="inquire" action='/lists' method='post'>
+  <h2 class="mt-8 font-anton text-4xl italic text-[#ff6123]">
+    {text}
+  </h2>
 
   <p class="-mb-2">
     Name <span class="text-gray-400">(required)</span>
   </p>
 
-  <div class="flex gap-2">
+  <div class="flex justify-between">
     <label class="flex flex-col w-[48.5%]">
       First Name
       <input type="text" name="first_name" />

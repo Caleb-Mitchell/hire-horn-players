@@ -1,3 +1,4 @@
+
 ---
 interface Props {
   src: string;
@@ -8,5 +9,5 @@ const { src, alt } = Astro.props;
 ---
 
 <div class="flex flex-col">
-  <img class="mx-auto mt-3 w-60 rounded-[50%] md:mt-8 lg:mt-10 lg:w-[22rem] lg:max-w-[26rem] lg:-ml-5" src={src} alt={alt} />
+  <img class="mx-auto mt-3 w-[60vw] md:w-[50vw] lg:w-[40vw] lg:max-w-[700px] rounded-[50%] md:mt-8 lg:mt-10" src={src} alt={alt} />
 </div>
