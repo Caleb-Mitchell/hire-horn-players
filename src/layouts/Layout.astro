@@ -24,13 +24,12 @@ const { title } = Astro.props;
     <script defer src="/app.ts"></script>
     <title>{title}</title>
   </head>
-  <body>
+  <body class="text-[#ff6123]">
     <slot />
   </body>
 </html>
 <style is:global>
   html {
-    color: #ff6123;
     background: #191b1d;
     font-size: 22px;
   }
