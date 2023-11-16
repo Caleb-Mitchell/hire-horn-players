@@ -2,19 +2,21 @@
 import CircleButton from "../components/CircleButton.astro";
 ---
 
-<footer class="to-scroll pl-4 pb-4 bg-[#0d0d0d] text-white">
-  <h2 class="mb-4 pt-8 font-anton text-2xl">BRASS IN THE KNOW</h2>
+<footer class="pl-4 pb-4 bg-[#0d0d0d] text-white">
+  <div class="to-scroll">
+    <h2 class="mb-4 pt-8 font-anton text-2xl">BRASS IN THE KNOW</h2>
 
-  <p class="font-semibold text-[13px] tracking-tighter mb-4">Please help us grow by joining our email list!</p>
+    <p class="font-semibold text-[13px] tracking-tighter mb-4">Please help us grow by joining our email list!</p>
 
-  <form action='/lists' method='post' class="mb-4">
-    <input class="font-acumin text-xs py-4 px-5" type='text' name='email_address' placeholder='Email Address' value=''>
-    <CircleButton text="JOIN" />
-  </form>
+    <form action='/lists' method='post' class="mb-4">
+      <input class="font-acumin text-xs py-4 px-5" type='text' name='email_address' placeholder='Email Address' value=''>
+      <CircleButton text="JOIN" />
+    </form>
 
-  <p class="mr-4 tracking-tighter leading-tight text-[12px] lg:w-3/5">
-    By signing up for our mailing list, you consent to receive semi-occasional
-    updates. We respect your privacy and will not share your email address with
-    third parties.
-  </p>
+    <p class="mr-4 tracking-tighter leading-tight text-[12px] lg:w-3/5">
+      By signing up for our mailing list, you consent to receive semi-occasional
+      updates. We respect your privacy and will not share your email address with
+      third parties.
+    </p>
+  </div>
 </footer>
