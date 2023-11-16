@@ -1,13 +1,97 @@
 ---
+import CircleButton from "../components/CircleButton.astro";
+
 interface Props {
-  text: string;
+text: string;
 }
 
 const { text } = Astro.props;
 ---
 
-<form id="inquire">
-  <h2 class="mx-auto mt-8 w-11/12 font-anton text-3xl italic">
-    {text}
-  </h2>
+<h2 class="pl-4 mt-8 font-anton text-3xl italic">
+  {text}
+</h2>
+
+<form class="px-4 mt-2 text-white flex flex-col gap-3 font-acumin text-xs" id="inquire" action='/lists' method='post'>
+
+  <p class="-mb-2">
+    Name <span class="text-gray-400">(required)</span>
+  </p>
+
+  <div class="flex gap-2">
+    <label class="flex flex-col w-[48.5%]">
+      First Name
+      <input type="text" name="first_name" />
+    </label>
+    <label class="flex flex-col w-[48.5%]">
+      Last Name
+      <input type="text" name="last_name" />
+    </label>
+  </div>
+
+  <label class="flex flex-col">
+    Phone
+    <input type="text" name="phone_number" />
+  </label>
+
+  <label class="flex flex-col">
+    <div>
+      Email <span class="text-gray-400">(required)</span>
+    </div>
+    <input type="text" name="email" />
+  </label>
+
+  <label class="flex flex-col">
+    <div>
+      Location
+      <p class="text-gray-400 text-[12px]">
+        CURRENTLY ONLY SERVICING THE CHICAGOLAND AREA
+      </p>
+    </div>
+    <select class="pl-1 text-black" name="location">
+      <option value="chicago">Chicago</option>
+      <option value="other">Other</option>
+    </select>
+  </label>
+
+  <label class="flex flex-col">
+    <div>
+      Event Type
+      <p class="text-gray-400 text-[12px]">
+        e.g., wedding, corporate event, party, recording session
+      </p>
+    </div>
+    <select class="pl-1 text-black" name="location">
+      <option value="chicago">Chicago</option>
+      <option value="other">Other</option>
+    </select>
+  </label>
+
+  <label class="flex flex-col">
+    Date of Event
+    <input class="pl-1 text-black" type="date" name="date" />
+  </label>
+
+  <label class="flex flex-col">
+    Message
+    <p class="text-gray-400 text-[12px]">
+      Any additional info?
+    </p>
+    <textarea class="text-black" name="" />
+  </label>
+
+  <label class="flex flex-col">
+    How did you hear about us?
+    <textarea class="text-black" name="" />
+  </label>
+
+  <label class="flex flex-col">
+    Budget
+    <p class="text-gray-400 text-[12px]">
+      We're happy to quote you if you don't have a number in mind!
+    </p>
+    <textarea class="text-black" name="" />
+  </label>
+
+  <CircleButton text="Submit" />
 </form>

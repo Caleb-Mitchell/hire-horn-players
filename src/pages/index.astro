@@ -14,13 +14,52 @@ import RectangleButton from "../components/RectangleButton.astro";
 <Layout title="HireHornPlayers.com">
   <Header />
   <main>
-    <Banner text="HIRE" text2="HORN" text3="PLAYERS" />
-    <CircleImage
-      src="/brass_instruments.jpeg"
-      alt="Some horns: a trumpet, trombone, and tenor saxophone"
-      label="A BRASSROOTS MOVEMENT"
-    />
+    <div class="md:justify-center md:flex md:mx-auto md:w-2/3 md:mt-20 lg:mt-36">
+      <Banner text="HIRE" text2="HORN" text3="PLAYERS" />
+      <CircleImage
+        src="/brass_instruments.jpeg"
+        alt="Some horns: a trumpet, trombone, and tenor saxophone"
+      />
+    </div>
+    <h8 class="mx-auto mt-3 md:mt-10 block w-2/3 text-center font-acumin text-[14px]"
+    >A BRASSROOTS MOVEMENT</h8
+    >
     <RectangleButton text="BOOK NOW" href="localhost:4321/#inquire" />
+
+    <div class="overflow-x-hidden relative border-[#ff6123] border-y mt-12 md:mb-12 h-16 flex items-center font-acumin text-xs">
+      <div class="animate-marquee whitespace-nowrap"
+        <i class="mx-2 nf nf-md-star_four_points"></i>
+        <span class="mx-2">NOT JUST TOOTING OUR HORNS</span>
+        <i class="mx-2 nf nf-md-star_four_points"></i>
+        <span class="mx-2">BLOWING HORNS AND MINDS SINCE 2023</span>
+        <i class="mx-2 nf nf-md-star_four_points"></i>
+        <span class="mx-2">BRASS ACTS ONLY</span>
+        <i class="mx-2 nf nf-md-star_four_points"></i>
+        <span class="mx-2">NOT JUST TOOTING OUR HORNS</span>
+        <i class="mx-2 nf nf-md-star_four_points"></i>
+        <span class="mx-2">BLOWING HORNS AND MINDS SINCE 2023</span>
+        <i class="mx-2 nf nf-md-star_four_points"></i>
+        <span class="mx-2">BRASS ACTS ONLY</span>
+        <i class="mx-2 nf nf-md-star_four_points"></i>
+      </div>
+
+      <div class="absolute animate-marquee2 whitespace-nowrap"
+        <i class="mx-2 nf nf-md-star_four_points"></i>
+        <span class="mx-2">NOT JUST TOOTING OUR HORNS</span>
+        <i class="mx-2 nf nf-md-star_four_points"></i>
+        <span class="mx-2">BLOWING HORNS AND MINDS SINCE 2023</span>
+        <i class="mx-2 nf nf-md-star_four_points"></i>
+        <span class="mx-2">BRASS ACTS ONLY</span>
+        <i class="mx-2 nf nf-md-star_four_points"></i>
+        <span class="mx-2">NOT JUST TOOTING OUR HORNS</span>
+        <i class="mx-2 nf nf-md-star_four_points"></i>
+        <span class="mx-2">BLOWING HORNS AND MINDS SINCE 2023</span>
+        <i class="mx-2 nf nf-md-star_four_points"></i>
+        <span class="mx-2">BRASS ACTS ONLY</span>
+        <i class="mx-2 nf nf-md-star_four_points"></i>
+      </div>
+    </div>
+
     <FluidBanner text="BORN 2 HORN" />
     <DescriptionArticle />
     <CircleImage

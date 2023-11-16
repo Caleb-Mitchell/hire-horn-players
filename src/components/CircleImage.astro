@@ -2,14 +2,11 @@
 interface Props {
   src: string;
   alt: string;
-  label?: string;
 }
 
-const { src, alt, label } = Astro.props;
+const { src, alt } = Astro.props;
 ---
 
-<img class="mx-auto mt-3 w-4/5 rounded-[50%]" src={src} alt={alt} />
-
-<h8 class="mx-auto mt-3 block w-2/3 text-center font-acumin text-[14px]"
-  >{label}</h8
->
+<div class="flex flex-col">
+  <img class="mx-auto mt-3 w-60 rounded-[50%] md:mt-8 lg:mt-10 lg:w-[22rem] lg:max-w-[26rem] lg:-ml-5" src={src} alt={alt} />
+</div>
