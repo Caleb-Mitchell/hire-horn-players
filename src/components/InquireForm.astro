@@ -7,8 +7,8 @@ text: string;
 
 const { text } = Astro.props;
 ---
-<form class="to-scroll px-4 mt-2 text-white flex flex-col gap-3 font-acumin text-xs" id="inquire" action='/lists' method='post'>
-  <h2 class="mt-8 font-anton text-4xl italic text-[#ff6123]">
+<form class="px-4 mt-2 text-white flex flex-col gap-3 font-acumin text-xs" id="inquire" action='/lists' method='post'>
+  <h2 class="to-scroll mt-8 font-anton text-4xl italic text-[#ff6123]">
     {text}
   </h2>
 
@@ -67,7 +67,7 @@ const { text } = Astro.props;
 
   <label class="flex flex-col">
     Date of Event
-    <input class="pl-1 text-black appearance-none" type="date" name="date" />
+    <input class="w-1/4 pl-1 text-black" type="date" name="date" />
   </label>
 
   <label class="flex flex-col">
