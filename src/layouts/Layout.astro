@@ -18,9 +18,12 @@ const { title } = Astro.props;
       rel="stylesheet"
     />
     <link href="https://fonts.cdnfonts.com/css/acumin-pro" rel="stylesheet" />
-    <link href="https://www.nerdfonts.com/assets/css/webfont.css" rel="stylesheet" />
+    <link
+      href="https://www.nerdfonts.com/assets/css/webfont.css"
+      rel="stylesheet"
+    />
     <meta name="generator" content={Astro.generator} />
-    <script defer src="/src/app.ts"></script>
+    <script src="/src/app.ts"></script>
     <title>{title}</title>
   </head>
   <body class="text-[#ff6123]">
@@ -43,7 +46,8 @@ const { title } = Astro.props;
       Courier New,
       monospace;
   }
-  input, select {
+  input,
+  select {
     background: #e5e7eb;
     height: 1.5rem;
   }
