@@ -4,36 +4,33 @@
 
 @layer components {
   .to-scroll {
-    opacity: 0;
+    /* opacity: 0; */
     transform: translateY(10%);
-    transition: .5s;
-    transition-property: transform, filter;
+    transition: all .5s;
   }
 
-  .delay-1 {
-    transition-delay: 20ms;
-  }
-
-  .delay-2 {
-    transition-delay: 40ms;
-  }
-
-  .delay-3 {
-    transition-delay: 60ms;
-  }
-
-  .delay-4 {
-    transition-delay: 80ms;
-  }
-
-  .delay-5 {
-    transition-delay: 100ms;
-  }
-
+/*   .delay-1 { */
+/*     transition-delay: 20ms; */
+/*   } */
+/**/
+/*   .delay-2 { */
+/*     transition-delay: 40ms; */
+/*   } */
+/**/
+/*   .delay-3 { */
+/*     transition-delay: 60ms; */
+/*   } */
+/**/
+/*   .delay-4 { */
+/*     transition-delay: 80ms; */
+/*   } */
+/**/
+/*   .delay-5 { */
+/*     transition-delay: 100ms; */
+/*   } */
+/**/
   .show {
-    opacity: 1;
+    /* opacity: 1; */
     transform: translateY(0);
-    -webkit-transition: translateY(0);
-    visibility: visible;
   }
 }
