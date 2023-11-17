@@ -10,6 +10,7 @@ export default {
       animation: {
         marquee: "marquee 30s linear infinite",
         marquee2: "marquee2 30s linear infinite",
+        slide_in: "slide_in .5s linear"
       },
       keyframes: {
         marquee: {
@@ -19,6 +20,10 @@ export default {
         marquee2: {
           "0%": { transform: "translateX(100%)" },
           "100%": { transform: "translateX(0%)" },
+        },
+        slide_in: {
+          "0%": { transform: "translateY(10%)" },
+          "100%": { transform: "translateY(0%)" },
         },
       },
     },
