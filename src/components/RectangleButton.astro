@@ -7,7 +7,11 @@ interface Props {
 const { text, href } = Astro.props;
 ---
 
-<form class="mx-auto mt-3 w-4/5 text-center md:max-w-xs" action={href} method="get">
+<form
+  class="mx-auto mt-3 w-4/5 text-center md:max-w-xs"
+  action={href}
+  method="get"
+>
   <button
     class="slide_in w-4/5 border-2 pt-1 font-acumin text-[14px] text-white md:h-14"
     type="submit">{text}</button

@@ -2,12 +2,18 @@
 import CircleButton from "../components/CircleButton.astro";
 
 interface Props {
-text: string;
+  text: string;
 }
 
 const { text } = Astro.props;
 ---
-<form class="px-4 mt-2 text-white flex flex-col gap-3 font-acumin text-xs" id="inquire" action='/lists' method='post'>
+
+<form
+  class="mt-2 flex flex-col gap-3 px-4 font-acumin text-xs text-white"
+  id="inquire"
+  action="/lists"
+  method="post"
+>
   <h2 class="slide_in mt-8 font-anton text-4xl italic text-[#ff6123]">
     {text}
   </h2>
@@ -17,11 +23,11 @@ const { text } = Astro.props;
   </p>
 
   <div class="flex justify-between">
-    <label class="flex flex-col w-[48.5%]">
+    <label class="flex w-[48.5%] flex-col">
       First Name
       <input type="text" name="first_name" />
     </label>
-    <label class="flex flex-col w-[48.5%]">
+    <label class="flex w-[48.5%] flex-col">
       Last Name
       <input type="text" name="last_name" />
     </label>
@@ -42,7 +48,7 @@ const { text } = Astro.props;
   <label class="flex flex-col">
     <div>
       Location
-      <p class="text-gray-400 text-[12px]">
+      <p class="text-[12px] text-gray-400">
         CURRENTLY ONLY SERVICING THE CHICAGOLAND AREA
       </p>
     </div>
@@ -55,7 +61,7 @@ const { text } = Astro.props;
   <label class="flex flex-col">
     <div>
       Event Type
-      <p class="text-gray-400 text-[12px]">
+      <p class="text-[12px] text-gray-400">
         e.g., wedding, corporate event, party, recording session
       </p>
     </div>
@@ -72,23 +78,21 @@ const { text } = Astro.props;
 
   <label class="flex flex-col">
     Message
-    <p class="text-gray-400 text-[12px]">
-      Any additional info?
-    </p>
-    <textarea rows="4" class="text-black" name="" />
+    <p class="text-[12px] text-gray-400">Any additional info?</p>
+    <textarea rows="4" class="text-black" name=""></textarea>
   </label>
 
   <label class="flex flex-col">
     How did you hear about us?
-    <textarea rows="4" class="text-black" name="" />
+    <textarea rows="4" class="text-black" name=""></textarea>
   </label>
 
   <label class="flex flex-col">
     Budget
-    <p class="text-gray-400 text-[12px]">
+    <p class="text-[12px] text-gray-400">
       We're happy to quote you if you don't have a number in mind!
     </p>
-    <textarea rows="4" class="text-black" name="" />
+    <textarea rows="4" class="text-black" name=""></textarea>
   </label>
 
   <CircleButton text="Submit" />
