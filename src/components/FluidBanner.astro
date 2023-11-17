@@ -6,6 +6,8 @@ interface Props {
 const { text } = Astro.props;
 ---
 
-<h2 class="slide_in mx-auto w-11/12 text-center font-anton text-[18vw]">
+<h2
+  class="slide_in mx-auto w-11/12 text-center font-anton text-[18vw] motion-reduce:animate-none"
+>
   {text}
 </h2>

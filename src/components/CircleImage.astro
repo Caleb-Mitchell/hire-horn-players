@@ -9,7 +9,7 @@ const { src, alt } = Astro.props;
 
 <div class="flex flex-col">
   <img
-    class="slide_in mx-auto mt-3 w-[60vw] rounded-[50%] md:mt-8 md:w-[50vw] lg:mt-10 lg:w-[40vw] lg:max-w-[700px]"
+    class="slide_in mx-auto mt-3 w-[60vw] rounded-[50%] motion-reduce:animate-none md:mt-8 md:w-[50vw] lg:mt-10 lg:w-[40vw] lg:max-w-[700px]"
     src={src}
     alt={alt}
   />

@@ -14,7 +14,9 @@ const { text } = Astro.props;
   action="/lists"
   method="post"
 >
-  <h2 class="slide_in mt-8 font-anton text-4xl italic text-[#ff6123]">
+  <h2
+    class="slide_in mt-8 font-anton text-4xl italic text-[#ff6123] motion-reduce:animate-none"
+  >
     {text}
   </h2>
 
