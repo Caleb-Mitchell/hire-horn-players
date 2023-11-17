@@ -10,7 +10,7 @@ export default {
       animation: {
         marquee: "marquee 30s linear infinite",
         marquee2: "marquee2 30s linear infinite",
-        slide_in: "slide_in .5s linear"
+        slide_in: "slide_in .5s linear",
       },
       keyframes: {
         marquee: {
@@ -28,5 +28,5 @@ export default {
       },
     },
   },
-plugins: [],
+  plugins: [],
 };

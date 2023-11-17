@@ -16,25 +16,31 @@ import RectangleButton from "../components/RectangleButton.astro";
 <Layout title="HireHornPlayers.com">
   <Header />
   <main>
-    <div class="slide_in md:justify-center md:flex md:mx-auto md:w-2/3 md:mt-20 lg:mt-36">
+    <div
+      class="slide_in md:mx-auto md:mt-20 md:flex md:w-2/3 md:justify-center lg:mt-36"
+    >
       <Banner text="HIRE" text2="HORN" text3="PLAYERS" />
       <BannerImage
         src="/brass_instruments.jpeg"
         alt="Some horns: a trumpet, trombone, and tenor saxophone"
       />
     </div>
-    <h8 class="mx-auto mt-3 md:mt-10 block w-2/3 text-center font-acumin text-[14px]"
-    >A BRASSROOTS MOVEMENT</h8
+    <h8
+      class="mx-auto mt-3 block w-2/3 text-center font-acumin text-[14px] md:mt-10"
+      >A BRASSROOTS MOVEMENT</h8
     >
-    <RectangleButton text="BOOK NOW" href="https://hire-horn-players.vercel.app/#inquire" />
+    <RectangleButton
+      text="BOOK NOW"
+      href="https://hire-horn-players.vercel.app/#inquire"
+    />
     <Marquee />
     <FluidBanner text="BORN 2 HORN" />
 
-    <div class="md:flex items-center mb-4">
-      <div class="mx-4 md:w-1/2 md:order-last md:mr-6 lg:mx-14">
+    <div class="mb-4 items-center md:flex">
+      <div class="mx-4 md:order-last md:mr-6 md:w-1/2 lg:mx-14">
         <DescriptionArticle />
       </div>
-      <div class="md:w-1/2 md:ml-4 lg:ml-10">
+      <div class="md:ml-4 md:w-1/2 lg:ml-10">
         <CircleImage
           src="/horn_section_2.jpeg"
           alt="A horn section playing on stage"
