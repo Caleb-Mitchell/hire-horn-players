@@ -8,9 +8,9 @@ export default {
         acumin: ["Acumin Pro", "sans-serif"],
       },
       animation: {
-        marquee: "marquee 30s linear infinite",
-        marquee2: "marquee2 30s linear infinite",
-        slide_in: "slide_in .5s linear",
+        marquee: "marquee 60s linear infinite",
+        marquee2: "marquee2 60s linear infinite",
+        slide_in: "slide_in .6s ease-in-out",
       },
       keyframes: {
         marquee: {
@@ -22,7 +22,7 @@ export default {
           "100%": { transform: "translateX(0%)" },
         },
         slide_in: {
-          "0%": { transform: "translateY(10%)", opacity: 0 },
+          "0%": { transform: "translateY(20%)", opacity: 0 },
           "100%": { transform: "translateY(0%)", opacity: 1 },
         },
       },
