@@ -10,9 +10,9 @@ const { text } = Astro.props;
 
 <form
   class="mt-2 flex flex-col gap-3 px-4 font-acumin text-xs text-white"
-  id="inquire"
-  action="/lists"
-  method="post"
+  id="inquiry-form"
+  action="https://script.google.com/macros/s/AKfycbw-mnuTpNEQEDHxYhIVKAXWo5RhhYcAF-zfAU8Hg6ERWD4zbC9zpZ_4B0PZJT461363/exec"
+  method="POST"
 >
   <h2
     class="slide_in mt-8 font-anton text-4xl italic text-[#ff6123] motion-reduce:animate-none"
@@ -27,24 +27,24 @@ const { text } = Astro.props;
   <div class="flex justify-between">
     <label class="flex w-[48.5%] flex-col">
       First Name
-      <input type="text" name="first_name" />
+      <input type="text" name="First_Name" required />
     </label>
     <label class="flex w-[48.5%] flex-col">
       Last Name
-      <input type="text" name="last_name" />
+      <input type="text" name="Last_Name" required />
     </label>
   </div>
 
   <label class="flex flex-col">
     Phone
-    <input type="text" name="phone_number" />
+    <input type="text" name="Phone_Number" />
   </label>
 
   <label class="flex flex-col">
     <div>
       Email <span class="text-gray-400">(required)</span>
     </div>
-    <input type="text" name="email" />
+    <input type="text" name="Email_Addr" required />
   </label>
 
   <label class="flex flex-col">
@@ -54,7 +54,7 @@ const { text } = Astro.props;
         CURRENTLY ONLY SERVICING THE CHICAGOLAND AREA
       </p>
     </div>
-    <select class="pl-1 text-black" name="location">
+    <select class="pl-1 text-black" name="Location">
       <option value="chicago">Chicago</option>
       <option value="other">Other</option>
     </select>
@@ -67,23 +67,23 @@ const { text } = Astro.props;
         e.g., wedding, corporate event, party, recording session
       </p>
     </div>
-    <input type="text" name="event_type" />
+    <input type="text" name="Event_Type" />
   </label>
 
   <label class="flex flex-col">
     Date of Event
-    <input class="w-2/5 pl-1 text-black" type="date" name="date" />
+    <input class="w-2/5 pl-1 text-black" type="date" name="Event_Date" />
   </label>
 
   <label class="flex flex-col">
     Message
     <p class="text-[12px] text-gray-400">Any additional info?</p>
-    <textarea rows="4" class="text-black" name=""></textarea>
+    <textarea rows="4" class="text-black" name="Message"></textarea>
   </label>
 
   <label class="flex flex-col">
     How did you hear about us?
-    <textarea rows="4" class="text-black" name=""></textarea>
+    <textarea rows="4" class="text-black" name="How_Did_You_Hear"></textarea>
   </label>
 
   <label class="flex flex-col">
@@ -91,7 +91,7 @@ const { text } = Astro.props;
     <p class="text-[12px] text-gray-400">
       We're happy to quote you if you don't have a number in mind!
     </p>
-    <textarea rows="4" class="text-black" name=""></textarea>
+    <textarea rows="4" class="text-black" name="Budget"></textarea>
   </label>
 
   <CircleButton text="Submit" />

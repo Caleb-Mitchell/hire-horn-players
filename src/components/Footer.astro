@@ -1,5 +1,5 @@
 ---
-import CircleButton from "../components/CircleButton.astro";
+import EmailForm from "../components/EmailForm.astro";
 ---
 
 <footer class="bg-[#0d0d0d] pb-8 pl-4 text-white">
@@ -10,16 +10,7 @@ import CircleButton from "../components/CircleButton.astro";
       Please help us grow by joining our email list!
     </p>
 
-    <form action="/lists" method="post" class="mb-4">
-      <input
-        class="px-5 py-4 font-acumin text-xs"
-        type="text"
-        name="email_address"
-        placeholder="Email Address"
-        value=""
-      />
-      <CircleButton text="JOIN" />
-    </form>
+    <EmailForm />
 
     <p class="mr-4 text-[12px] leading-tight tracking-tighter lg:w-3/5">
       By signing up for our mailing list, you consent to receive semi-occasional
