@@ -1,12 +1,15 @@
 ---
 interface Props {
   text: string;
+  id: string;
 }
 
-const { text } = Astro.props;
+const { text, id } = Astro.props;
 ---
 
+
 <button
-  class="hover:bg-[#d1d1d2] hover:text-[#191b1d] mb-4 mt-3 block h-9 w-16 rounded-[50%] bg-gray-200 px-2 py-1 font-acumin text-xs font-[1000] italic text-black transition focus:outline-none"
+  id={id}
+  class="mb-4 mt-3 block h-12 w-24 rounded-[50%] bg-gray-200 px-2 py-1 font-acumin text-xs font-[1000] italic text-black transition hover:bg-[#d1d1d2] hover:text-[#191b1d] focus:outline-none"
   type="submit">{text}</button
 >
