@@ -102,7 +102,7 @@ window.addEventListener("load", () => {
 
           text.innerHTML =
             "Thank you! We’ll be in touch with you within the next 24 hours. Have a great day!";
-          text.style.padding = "6rem 0";
+          text.style.padding = "6rem 1rem";
           text.style.margin = "2rem 1rem";
           text.style.height = "50%";
           text.style.textAlign = "center";
